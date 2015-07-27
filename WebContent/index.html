@@ -1,0 +1,73 @@
+
+
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <style>
+    html { 
+	    background: url(./IMG/im.png) no-repeat center center fixed; 
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	     background-size: cover;
+    } 
+    input[type="button"], input[type="reset"] { 
+    display: inline-block;
+    margin: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:    0 8px 0 #808080, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #808080, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #808080, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 50px;
+    color: #3399CC;
+     } 
+    input[type="text"] {
+    width: 340px;
+    height: 1200px;
+    }
+    input {
+    font-size: 30px;
+    }
+    </style>
+
+    </head>
+    <body>
+    <center>
+    <font color=white size=8 > Calculator </font> <br> <br>
+    <form name="calculator" >
+    <input type = "textfield" name = "ans" value = ""> <br> <br> 
+    <table>
+    <tr> <td> <input type = "button" value = " 1 " onclick = "document.calculator.ans.value+= '1'"> </td>
+    <td> <input type = "button" value = " 2 " onclick = "document.calculator.ans.value+= '2'"> </td> 
+    <td> <input type = "button" value = " 3 " onclick = "document.calculator.ans.value+= '3'"> </td> 
+    <td> <input type = "button" value = "+ " onclick = "document.calculator.ans.value+= '+'"> </td> </tr>
+    <tr> <td> <input type = "button" value = " 4 " onclick = "document.calculator.ans.value+= '4'"> </td>
+    <td> <input type = "button" value = " 5 " onclick = "document.calculator.ans.value+= '5'"> </td>
+    <td> <input type = "button" value = " 6 " onclick = "document.calculator.ans.value+= '6'"> </td> 
+    <td> <input type = "button" value = " - " onclick = "document.calculator.ans.value+= '-'"> </td> </tr> 
+    <tr> <td> <input type = "button" value = " 7 " onclick = "document.calculator.ans.value+= '7'"> </td>
+    <td> <input type = "button" value = " 8 " onclick = "document.calculator.ans.value+= '8'"> </td>
+    <td> <input type = "button" value = " 9 " onclick = "document.calculator.ans.value+= '9'"> </td> 
+    <td> <input type = "button" value = " * " onclick = "document.calculator.ans.value+= '*'"> </td> </tr> 
+    <tr> <td> <input type = "button" value = " .  " onclick = "document.calculator.ans.value+= '.'"> </td> 
+    <td> <input type = "button" value = " 0 " onclick = "document.calculator.ans.value+= '0'"> </td>
+    <td> <input type = "button" value = " = " onclick="document.calculator.ans.value=eval(document.calculator.ans.value)"> </td> 
+    <td> <input type = "button" value = " / " onclick = "document.calculator.ans.value+= '/'"> </td> </tr>  
+    </table>
+     <input type="reset" value = " Clear ">
+    </form>
+    </center>
+    <br> 
+    <center>
+    <font color = white> Designed and Developed by Flora, Priyanka, Pravalika and Suchandana<br>
+     from department of <u> Computer Science and Engineering </u></font>             
+     </center>
+</body>
+</html>
